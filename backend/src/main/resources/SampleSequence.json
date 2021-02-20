@@ -1,0 +1,174 @@
+[
+    {
+	    "type": "none",
+		"callerClass": "Ferrari",
+        "calleeClass": "Car",
+		"callerName": "carFunction",
+		"returnType": "int",
+        "param": [
+			{
+				"type": "int",
+				"name": "fuel"
+			}
+		],
+        "call": [
+            {
+			    "type": "none",
+                "callerClass": "Car",
+                "calleeClass": "Car",
+				"callerName": "carFunction2",
+				"returnType": "",
+                "param": [
+					{
+						"type": "int",
+				        "name": "hp"
+					}
+				],
+                "call": []
+            }
+        ]
+    },
+	{
+	    "type": "none",
+		"callerClass": "Ferrari",
+        "calleeClass": "Ferrari",
+		"callerName": "ferrariFunction",
+		"returnType": "",
+        "param": [],
+		"call": []
+    },
+	{
+	    "type": "none",
+		"callerClass": "Ferrari",
+        "calleeClass": "Radio",
+		"callerName": "radioFunction",
+		"returnType": "int",
+        "param": [],
+        "call": [
+            {
+			    "type": "none",
+                "callerClass": "Radio",
+                "calleeClass": "Sound",
+				"callerName": "soundFunction",
+				"returnType": "int",
+                "param": [],
+                "call": []
+            }
+        ]
+    },
+	{
+	    "type": "loop",
+        "call": [
+            {
+			    "type": "none",
+                "callerClass": "Ferrari",
+                "calleeClass": "Car",
+				"callerName": "carFunction3",
+				"returnType": "int",
+                "param": [],
+                "call": [
+					{
+						"type": "none",
+						"callerClass": "Car",
+						"calleeClass": "Break",
+						"callerName": "stop",
+						"returnType": "",
+						"param": [],
+						"call": [
+							{
+								"type": "none",
+								"callerClass": "Break",
+								"calleeClass": "Tire",
+								"callerName": "engage",
+								"returnType": "",
+								"param": [],
+								"call": [
+									{
+										"type": "none",
+										"callerClass": "Tire",
+										"calleeClass": "Tire",
+										"callerName": "grip",
+										"returnType": "",
+										"param": [],
+										"call": []
+									},
+									{
+										"type": "none",
+										"callerClass": "Tire",
+										"calleeClass": "Tire",
+										"callerName": "heat",
+										"returnType": "",
+										"param": [],
+										"call": []
+									}
+								]
+							}
+						]
+					}
+				]
+            }
+        ]
+    },
+    {
+        "type": "opt",
+        "call": [
+            [
+				{
+					"type": "none",
+					"callerClass": "Ferrari",
+					"calleeClass": "Option",
+					"callerName": "optionalFunction",
+					"returnType": "int",
+					"param": [],
+					"call": []
+				}
+			]
+        ]
+    },
+    {
+		"type": "alt",
+        "call": [
+            [
+				{
+					"type": "none",
+					"callerClass": "Ferrari",
+					"calleeClass": "Car",
+					"callerName": "hp",
+					"returnType": "",
+					"param": [					
+						{
+							"type": "int",
+							"name": "hp"
+						}
+					],
+					"call": []
+				}
+			],
+			[
+				{
+					"type": "none",
+					"callerClass": "Ferrari",
+					"calleeClass": "Car",
+					"callerName": "test",
+					"returnType": "",
+					"param": [
+						{
+							"type": "String",
+							"name": "t"
+						}
+					],
+					"call": []
+				}
+			]
+        ]
+    },
+    {
+        "type": "self",
+        "callerClass": "Ferrari",
+        "calleeClass": "Ferrari",
+		"callerName": "foo",
+		"returnType": "",
+        "param": [],
+        "call":[]
+    }
+]

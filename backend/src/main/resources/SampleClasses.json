@@ -1,0 +1,65 @@
+[
+	{
+		"ClassType": "Class",		
+		"Name": "TestClass",
+		"TypeParameters": [],
+		"Fields": [
+			{
+				"FieldName": "X",
+				"Type": "int",
+				"Access": "private"		
+			},
+			{
+				"FieldName": "Y",
+				"Type": "String",
+				"Access": "public"
+			},
+			{
+				"FieldName": "A",
+				"Type": "ClassA",
+				"Access": "protected"
+			}
+		],
+		"Methods": [
+			{
+				"FuncName": "getX",
+				"Param": [],
+				"Access": "public"		
+			},
+			{
+				"FuncName": "setX",
+				"Param": ["int"],
+				"Access": "private"
+			}
+		],
+		"Relationship": {
+			"Inheritance": ["Father1"],								
+			"Implementation": ["TestInterface1", "TestInterface2"],
+			"Dependency": ["Reference1", "Reference2"]				
+		}
+	},
+	{
+		"ClassType": "Interface",
+		"Name": "TestInterface1",
+		"TypeParameters": ["T", "V"],
+		"Fields": [
+			{
+				"FieldName": "X",
+				"Type": "int",
+				"Access": "private"
+			}
+		],
+		"Methods": [
+			{
+				"FuncName": "getX",
+				"Param": [],
+				"Access": "public"
+			}
+		],
+		"Relationship": {
+			"Inheritance": [],								
+			"Implementation": [],
+			"Dependency": []				
+		}
+	}
+]
